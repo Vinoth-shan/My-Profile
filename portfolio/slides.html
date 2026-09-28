@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vinoth S Project Deck</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/slides.css">
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<main class="deck" id="deck"></main>
+<nav class="bar" aria-label="Slide controls">
+  <div class="who"><img class="avatar" src="assets/img/avatar.jpg" alt="Vinoth S" width="36" height="36"><b>VINOTH S</b><span>Project deck</span></div>
+  <div class="rt">
+    <button class="bb" id="bIdx" aria-label="Open slide index"><i data-lucide="list"></i><span class="t">Index</span></button>
+    <button class="bb sq" id="bPrev" aria-label="Previous slide"><i data-lucide="chevron-left"></i></button>
+    <span class="ctr"><b id="cur">1</b> / <span id="tot"></span></span>
+    <button class="bb sq" id="bNext" aria-label="Next slide"><i data-lucide="chevron-right"></i></button>
+  </div>
+</nav>
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Slide index">
+  <div class="mh"><h3>Slide index</h3><button class="bb" id="mClose"><i data-lucide="x"></i><span class="t">Close</span></button></div>
+  <div id="mList"></div>
+</div>
+<script src="data/profile.js"></script>
+<script src="data/details/flagship.js" onerror="0"></script>
+<script src="data/details/oceanimports.js" onerror="0"></script>
+<script src="data/details/opsfinance.js" onerror="0"></script>
+<script src="data/details/internal.js" onerror="0"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/slides.js"></script>
+</body>
+</html>

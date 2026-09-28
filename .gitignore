@@ -1,0 +1,11 @@
+# Private working files: company docs, raw analysis, security notes. Never publish.
+source-docs/
+inventory/
+PORTFOLIO_INVENTORY.md
+.claude/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+desktop.ini
+.vscode/

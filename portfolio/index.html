@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vinoth S Portfolio</title>
+<meta name="description" content="Software Developer, Systems & Automation. 36 live applications and AI automation pipelines for US & UK freight operations.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="#hero" aria-label="VINOTH S home"><img class="avatar" src="assets/img/avatar.jpg" alt="Vinoth S" width="36" height="36"><span class="bname">VINOTH S</span></a>
+    <nav class="links" id="links" aria-label="Sections">
+      <a href="#about">About</a><a href="#journey">Journey</a><a href="#featured">Featured</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="slides.html">Slides</a>
+    </nav>
+    <div class="acts">
+      <button class="ib" id="theme" aria-label="Switch colour theme"><i data-lucide="sun-moon"></i></button>
+      <button class="ib menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="hero">
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="where"><i data-lucide="map-pin"></i><span id="loc"></span></p>
+      <h1 id="name"></h1>
+      <p class="role" id="role"></p>
+      <p class="tag" id="tagline"></p>
+      <div class="cta">
+        <a class="btn grad" href="#featured"><i data-lucide="sparkles"></i>See my work</a>
+        <a class="btn ghost" id="cv" target="_blank" rel="noopener"><i data-lucide="file-text"></i>Resume</a>
+        <a class="btn ghost" href="slides.html"><i data-lucide="presentation"></i>Presentation</a>
+      </div>
+    </div>
+    <div class="map" aria-label="Projects by business area">
+      <h3>What I've built <small id="mapTotal"></small></h3>
+      <ul id="map"></ul>
+    </div>
+  </div>
+  <div class="wrap"><div class="stats" id="stats"></div></div>
+</section>
+
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="about">
+      <div>
+        <h2 class="h">One developer, the whole stack</h2>
+        <div class="summary" id="summary"></div>
+      </div>
+      <div class="ai" id="ai"></div>
+    </div>
+    <h3 class="h3">How a request becomes a running system</h3>
+    <ol class="process" id="process"></ol>
+  </div>
+</section>
+
+<section class="sec alt" id="journey">
+  <div class="wrap">
+    <h2 class="h">From railway fabrication to AI automation</h2>
+    <p class="lead">Nine years, two careers, one habit: build the thing that fixes the problem.</p>
+    <ol class="route" id="route"></ol>
+  </div>
+</section>
+
+<section class="sec" id="featured">
+  <div class="wrap wide">
+    <h2 class="h">Featured systems</h2>
+    <p class="lead">A closer look at eight systems from different parts of the business. Every project, here and below, opens the same full breakdown.</p>
+    <div class="bento" id="bento"></div>
+  </div>
+</section>
+
+<section class="sec alt" id="projects">
+  <div class="wrap wide">
+    <h2 class="h">Every project</h2>
+    <p class="lead">Every live system I have designed and built, with workflow, screens, data and outcomes for each.</p>
+    <p class="vnote" id="vnote"></p>
+    <div class="toolbar">
+      <div class="tabs" id="filters" role="toolbar" aria-label="Filter by category"></div>
+      <label class="search"><i data-lucide="search"></i><input id="q" type="search" placeholder="Search by name or technology" aria-label="Search projects"></label>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div class="grid" id="grid"></div>
+    <p class="fine"><i data-lucide="lock"></i>Company systems are confidential. Screenshots and code walkthroughs are available in interviews.</p>
+  </div>
+</section>
+
+<section class="sec" id="skills">
+  <div class="wrap">
+    <h2 class="h">Toolkit</h2>
+    <div class="skills" id="skillgrid"></div>
+  </div>
+</section>
+
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <span class="mesh" aria-hidden="true"></span>
+      <div class="c-copy">
+        <h2>Let's talk</h2>
+        <p id="openTo"></p>
+        <p class="c-free"><i data-lucide="briefcase-business"></i><span id="cFree"></span></p>
+        <p class="c-loc"><i data-lucide="map-pin"></i><span id="cLoc"></span></p>
+      </div>
+      <div class="c-links" id="clinks"></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="sf-top">
+      <div class="sf-brand">
+        <a class="brand" href="#hero" aria-label="Back to top"><img class="avatar" src="assets/img/avatar.jpg" alt="Vinoth S" width="36" height="36"><span class="bname">VINOTH S</span></a>
+        <p id="fTitle"></p>
+      </div>
+      <nav class="sf-links" aria-label="Footer">
+        <a href="#about">About</a><a href="#journey">Journey</a><a href="#featured">Featured</a><a href="#projects">Projects</a><a href="#skills">Toolkit</a><a href="slides.html">Slides</a>
+      </nav>
+      <div class="sf-social" id="fSocial"></div>
+    </div>
+    <div class="sf-bottom">
+      <p class="sf-copy">&copy; <span id="yr"></span> <b>VINOTH S</b></p>
+      <p class="sf-made">Designed, built and hosted <em>by me</em></p>
+      <a href="#hero" class="sf-up" aria-label="Back to top"><i data-lucide="arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="data/profile.js"></script>
+<script src="data/details/flagship.js" onerror="0"></script>
+<script src="data/details/oceanimports.js" onerror="0"></script>
+<script src="data/details/opsfinance.js" onerror="0"></script>
+<script src="data/details/internal.js" onerror="0"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
