@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>LinkedIn banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Instrument+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* 1584 x 396 = LinkedIn banner. Profile photo covers the bottom-left, so content sits right. */
+  html,body{margin:0;width:1584px;height:396px;overflow:hidden;background:#0C1230}
+  .b{position:relative;width:1584px;height:396px;overflow:hidden;font-family:'Instrument Sans',sans-serif;color:#fff;
+    background:
+      radial-gradient(38% 80% at 88% 10%,rgba(236,72,153,.38),transparent 70%),
+      radial-gradient(45% 90% at 62% 105%,rgba(79,70,229,.55),transparent 70%),
+      radial-gradient(30% 70% at 8% 0%,rgba(6,182,212,.28),transparent 70%),
+      radial-gradient(26% 60% at 30% 100%,rgba(245,158,11,.22),transparent 70%),
+      #0C1230}
+  /* faint node network on the left, behind the profile photo area */
+  svg.net{position:absolute;left:0;top:0;width:640px;height:396px;opacity:.55}
+  .dots{position:absolute;inset:0;background:radial-gradient(circle at 1px 1px,rgba(255,255,255,.07) 1px,transparent 1.6px) 0 0/22px 22px;mask-image:linear-gradient(90deg,transparent 0%,#000 40%,#000 100%)}
+  .content{position:absolute;right:64px;top:50%;transform:translateY(-50%);width:1000px;text-align:right}
+  .kicker{display:inline-flex;align-items:center;gap:10px;font:600 17px 'Instrument Sans';color:#C7CCF0;letter-spacing:.14em;text-transform:uppercase}
+  .kicker i{width:36px;height:3px;border-radius:3px;background:linear-gradient(90deg,#4F46E5,#8B5CF6,#EC4899,#F59E0B)}
+  h1{margin:12px 0 8px;font:800 42px/1.1 'Sora';white-space:nowrap;letter-spacing:-.01em;
+     background:linear-gradient(100deg,#fff 35%,#C4B5FD 70%,#F9A8D4 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{font:500 19px 'Instrument Sans';color:#C9CEEA;white-space:nowrap}
+  .stats{display:flex;justify-content:flex-end;gap:12px;margin-top:20px}
+  .stat{display:flex;align-items:baseline;gap:8px;padding:10px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14)}
+  .stat b{font:800 26px 'Sora'}
+  .stat span{font:600 14px 'Instrument Sans';color:#B7BDE3}
+  .s1 b{color:#A5B4FC}.s2 b{color:#C4B5FD}.s3 b{color:#F9A8D4}.s4 b{color:#FCD34D}.s5 b{color:#67E8F9}
+  .foot{display:flex;justify-content:flex-end;align-items:center;gap:14px;margin-top:16px;font:600 16px 'Instrument Sans';color:#DDE1F7}
+  .url{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:linear-gradient(120deg,#4F46E5,#8B5CF6 45%,#EC4899)}
+  .tech{color:#9CA3CF;font-weight:500}
+</style>
+</head>
+<body>
+<div class="b">
+  <div class="dots"></div>
+  <svg class="net" viewBox="0 0 640 396" aria-hidden="true">
+    <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#06B6D4"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs>
+    <g stroke="url(#g)" stroke-width="1.6" fill="none" opacity=".75">
+      <path d="M40 70 L170 40 L300 95 L430 55 L560 120"/>
+      <path d="M170 40 L210 160 L300 95"/>
+      <path d="M210 160 L360 200 L430 55"/>
+      <path d="M360 200 L520 250 L560 120"/>
+      <path d="M90 190 L210 160"/>
+    </g>
+    <g fill="#fff">
+      <circle cx="40" cy="70" r="4" opacity=".7"/><circle cx="170" cy="40" r="6" fill="#67E8F9"/><circle cx="300" cy="95" r="5" fill="#C4B5FD"/>
+      <circle cx="430" cy="55" r="6" fill="#F9A8D4"/><circle cx="560" cy="120" r="5" fill="#FCD34D"/><circle cx="210" cy="160" r="4" opacity=".8"/>
+      <circle cx="360" cy="200" r="5" fill="#A5B4FC"/><circle cx="520" cy="250" r="4" opacity=".7"/><circle cx="90" cy="190" r="3" opacity=".6"/>
+    </g>
+  </svg>
+
+  <div class="content">
+    <div class="kicker"><i></i>Software Developer · Systems &amp; Automation</div>
+    <h1>I build the systems a freight business runs on</h1>
+    <div class="sub">Database architecture to AI document automation, designed, built and run by one developer.</div>
+    <div class="stats">
+      <div class="stat s1"><b>36</b><span>live systems</span></div>
+      <div class="stat s2"><b>250</b><span>ops staff</span></div>
+      <div class="stat s3"><b>6</b><span>AI-integrated</span></div>
+      <div class="stat s4"><b>16</b><span>n8n-automated</span></div>
+      <div class="stat s5"><b>23</b><span>API-connected</span></div>
+    </div>
+    <div class="foot"><span class="tech">PHP · MySQL · n8n · Gemini · Claude · REST APIs</span><span class="url">vinoth-shan.github.io/My-Profile</span></div>
+  </div>
+</div>
+</body>
+</html>
