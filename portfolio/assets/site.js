@@ -39,6 +39,7 @@
 
   // about
   $("#summary").innerHTML = P.summary.map(p => `<p>${esc(p)}</p>`).join("");
+  $("#awards").innerHTML = (P.awards || []).map(a => `<div class="award"><span class="aw-i">${ic("trophy")}</span><div><b>${esc(a.t)} <em>${esc(a.y)}</em></b><span>${esc(a.org)}. ${esc(a.d)}</span></div></div>`).join("");
   $("#ai").innerHTML = `<h3><span class="badge">${ic("sparkles")}</span>${esc(P.ai.title)}</h3><p>${esc(P.ai.lead)}</p>
     <ul>${P.ai.points.map(x => `<li><span class="ii">${ic(x.ic)}</span><div><b>${esc(x.t)}</b><span>${esc(x.d)}</span></div></li>`).join("")}</ul>`;
   $("#process").innerHTML = P.process.map((s, i) => `<li><span class="n">${i + 1}</span><span class="pi" style="background:${GRADS[i]}">${ic(s.ic)}</span><b>${esc(s.t)}</b><span>${esc(s.d)}</span></li>`).join("");

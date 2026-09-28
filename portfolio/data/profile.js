@@ -27,6 +27,9 @@ window.PROFILE = {
     "In three years that has become 36 live systems used by 250 operations staff across US and UK freight operations, two customer-facing products, and AI pipelines that read hundreds of shipping documents a day.",
     "I build with AI (Claude) as a force multiplier: I make the architecture decisions, AI helps me ship them faster."
   ],
+  awards: [
+    { t: "Extra Mile Award", y: "2025–26", org: "A.J. Worldwide Services", d: "Recognised for performance and for going beyond my role as the company's sole developer." }
+  ],
   journey: [
     { y: "2017", ic: "graduation-cap", c: "#6366F1", t: "B.E. Production Engineering", d: "Velammal Engineering College, Chennai (CGPA 7.4)." },
     { y: "2018", ic: "factory", c: "#8B5CF6", t: "Founded a fabrication business", d: "Supplied fabricated items to Indian Railways (ICF) through public tenders: procurement, production, quality and customers." },
@@ -34,7 +37,7 @@ window.PROFILE = {
     { y: "Oct 2023", ic: "briefcase", c: "#F43F5E", t: "Joined AJWW as its first developer", d: "Left the partnership to work in software full time. The first task was a single PHP form." },
     { y: "2024", ic: "layout-dashboard", c: "#F59E0B", t: "From forms to platforms", d: "Dashboards, workflow tools and UiPath RPA bots that removed about 3 FTE of manual work." },
     { y: "2025", ic: "workflow", c: "#06B6D4", t: "Automation moves to n8n + AI", d: "Gemini document extraction, fraud checks and email automation replaced manual steps." },
-    { y: "2026", ic: "rocket", c: "#3B82F6", t: "Products, customers, AI-driven development", d: "Customer APIs, a 103-table sales platform and Claude-assisted delivery." }
+    { y: "2026", ic: "rocket", c: "#3B82F6", t: "Products, customers, AI-driven development", d: "Customer APIs, a 103-table sales platform, Claude-assisted delivery, and the Extra Mile Award for 2025–26." }
   ],
   ai: {
     title: "AI-driven development",

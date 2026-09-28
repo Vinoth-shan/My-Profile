@@ -30,7 +30,7 @@
     <p class="lede" style="font-size:15px">Use the arrows at the bottom right, your arrow keys, or swipe. Index opens a list of every slide.</p></div>`);
 
   add("About me", "One developer, the whole stack", `<div class="inner"><span class="kick">${ic("user-round")}About me</span><h2 class="h2">One developer, the whole stack</h2>
-    <div class="g g2"><div class="card">${P.summary.map(p => `<p style="margin-bottom:10px">${esc(p)}</p>`).join("")}</div>
+    <div class="g g2"><div class="card">${P.summary.map(p => `<p style="margin-bottom:10px">${esc(p)}</p>`).join("")}${(P.awards || []).map(a => `<div class="award-line">${ic("trophy")}<span><b>${esc(a.t)} ${esc(a.y)}</b> · ${esc(a.org)}</span></div>`).join("")}</div>
     <div class="card"><h4>${ic("sparkles")}${esc(P.ai.title)}</h4><p style="margin-bottom:10px">${esc(P.ai.lead)}</p>${mini(P.ai.points.map(x => [x.t, x.d]), "check-circle-2")}</div></div></div>`);
 
   add("About me", "How I work", `<div class="inner"><span class="kick">${ic("workflow")}How I work</span><h2 class="h2">A request goes in, a running system comes out</h2>

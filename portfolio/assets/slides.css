@@ -147,3 +147,6 @@ p{margin:0} ul,ol{margin:0;padding:0;list-style:none}
 .gcard p{color:rgba(255,255,255,.68)!important;font-size:clamp(13px,.95vw,14.5px)}
 .gcat{font-size:12px;font-weight:600;color:rgba(255,255,255,.75)}
 .gcard .status{background:rgba(255,255,255,.1);color:#fff}
+
+.award-line{display:flex;align-items:center;gap:10px;margin-top:6px;padding:10px 14px;border-radius:12px;background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.4);font-size:clamp(13.5px,1.02vw,15.5px)}
+.award-line [data-lucide]{color:#D97706;font-size:20px}

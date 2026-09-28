@@ -36,6 +36,7 @@ window.R = {
       unit: "Office Framework Operation Gen",
       place: "Chennai",
       dates: "Oct 2023 – Present",
+      award: "Extra Mile Award 2025–26 · recognised for performance and going beyond my role",
       intro: "Only developer in the organisation. I turn requirements from US and UK operations teams into production systems and run them end to end, working in agile, iterative cycles: ship a working first version fast, then keep adding features from user feedback.",
       groups: [
         ["AI & automation", [

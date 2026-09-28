@@ -51,6 +51,7 @@ In three years that has become:
 • 36 live systems used by 250 operations staff
 • 6 AI-integrated, 16 n8n-automated and 23 API-connected systems
 • Two customer-facing products with their own console and REST API
+• Extra Mile Award 2025–26 from A.J. Worldwide for performance
 
 A few I'm proud of:
 ▸ Arrival Notice AI pipeline — n8n + Gemini read 200–300 carrier PDFs a day, extract shipment data, match the right operator and email them. Duplicates are removed by content hash before any AI call.
@@ -93,6 +94,8 @@ Also in the About box: under **Skills** (top 5 shown with About) pick: Workflow 
 
 ```
 Only developer in the organisation. I turn requirements from US and UK operations teams into production systems and run them end to end, working in agile, iterative cycles.
+
+🏆 Extra Mile Award 2025–26 — recognised for performance and going beyond my role.
 
 AI & automation
 • Built an AI arrival-notice pipeline (25-node n8n workflow + Gemini 2.5 Flash) that reads 200–300 carrier PDFs a day and routes each shipment to its operator automatically.
@@ -173,6 +176,20 @@ Delete any other old entries that duplicate these two (open → **Delete experie
 | End date | 2014 |
 
 → **Save** each.
+
+### 5c. Honors & awards
+
+**Where:** top card → **Add profile section** → **Recommended** (or **Additional**) → **Add honors & awards**.
+
+| Field | Value |
+|---|---|
+| Title | Extra Mile Award |
+| Associated with | A.J. Worldwide Services (pick your AJWW experience) |
+| Issuer | A.J. Worldwide Services |
+| Issue date | [month] 2026 — the month you received it |
+| Description | Awarded for the 2025–26 year for performance and for going beyond my role as the company's sole developer. |
+
+Optional: if you have a photo or certificate of the award, add it under **Media**, and also post it as a short LinkedIn post (recruiters notice recent posts).
 
 ---
 

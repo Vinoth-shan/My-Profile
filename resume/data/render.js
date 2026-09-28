@@ -21,6 +21,7 @@ window.H = (() => {
     skills: () => `<div class="r-skills">${R.skills.map(([g, items]) => `<div class="r-skill"><h4>${esc(g)}</h4><div class="r-tags">${items.map(t => `<span>${esc(t)}</span>`).join("")}</div></div>`).join("")}</div>`,
     job: (j) => `<article class="r-job">
         <header><div><h3>${esc(j.role)}</h3><p class="r-org">${esc(j.org)}${j.unit ? ` · ${esc(j.unit)}` : ""}, ${esc(j.place)}</p></div><span class="r-dates">${esc(j.dates)}</span></header>
+        ${j.award ? `<p class="r-award">${ic("trophy")}<span>${esc(j.award)}</span></p>` : ""}
         ${j.intro ? `<p class="r-intro">${esc(j.intro)}</p>` : ""}
         ${j.groups.map(([g, items]) => `${g ? `<h4 class="r-group">${esc(g)}</h4>` : ""}<ul>${items.map(t => `<li>${esc(t)}</li>`).join("")}</ul>`).join("")}
       </article>`,
@@ -28,7 +29,7 @@ window.H = (() => {
     // Part of a job's groups, for designs that split experience across the two pages.
     jobPart: function (i, from, to, cont) {
       const j = R.experience[i];
-      return this.job({ ...j, intro: cont ? "" : j.intro, role: cont ? `${j.role} (continued)` : j.role, groups: j.groups.slice(from, to) });
+      return this.job({ ...j, award: cont ? "" : j.award, intro: cont ? "" : j.intro, role: cont ? `${j.role} (continued)` : j.role, groups: j.groups.slice(from, to) });
     },
     projects: (n) => `<div class="r-projects">${R.projects.slice(0, n || 99).map(([name, stack, one]) => `<div class="r-proj"><b>${esc(name)}</b><span class="r-stack">${esc(stack)}</span><p>${esc(one)}</p></div>`).join("")}</div>`,
     strengths: () => `<div class="r-strengths">${R.strengths.map(([t, d]) => `<div><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join("")}</div>`,
@@ -43,6 +44,7 @@ window.H = (() => {
       style.textContent = `.dl-fab{position:fixed;right:22px;bottom:22px;z-index:50;display:inline-flex;align-items:center;gap:9px;padding:13px 20px;border-radius:999px;
         font:600 14px/1 system-ui,-apple-system,"Segoe UI",sans-serif;color:#fff;text-decoration:none;background:linear-gradient(120deg,#4F46E5,#8B5CF6 45%,#EC4899);
         box-shadow:0 14px 30px -10px rgba(79,70,229,.7);transition:transform .15s}
+        .r-award{display:flex;align-items:center;gap:6px;margin:1.6mm 0 0;font-weight:700;font-size:.95em;color:var(--accent,var(--coral,var(--amber,#B45309)))}.r-award svg{width:1.1em;height:1.1em;flex:none}
         .dl-fab:hover{transform:translateY(-2px)} .dl-fab svg{width:18px;height:18px}
         @media print{.dl-fab{display:none!important}} @media (max-width:520px){.dl-fab{right:14px;bottom:14px;padding:12px 16px}}`;
       document.head.appendChild(style);

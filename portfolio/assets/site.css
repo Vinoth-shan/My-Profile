@@ -302,3 +302,11 @@ html,*{scrollbar-width:thin;scrollbar-color:var(--sb-thumb) var(--sb-track)}
 
 /* profile photo badge */
 .avatar{width:38px;height:38px;border-radius:50%;object-fit:cover;flex:none;padding:2px;background:var(--grad);box-shadow:0 6px 16px -8px rgba(139,92,246,.8)}
+
+/* award card */
+.awards{margin-top:20px;display:grid;gap:10px;max-width:38em}
+.award{display:flex;gap:14px;align-items:center;padding:14px 16px;border-radius:16px;background:linear-gradient(120deg,rgba(245,158,11,.14),rgba(236,72,153,.08));border:1px solid rgba(245,158,11,.4)}
+.aw-i{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;flex:none;color:#fff;font-size:21px;background:linear-gradient(135deg,#F59E0B,#EC4899);box-shadow:0 10px 22px -10px rgba(245,158,11,.8)}
+.award b{display:block;font-family:var(--display);font-size:16px}
+.award b em{font-style:normal;font-weight:600;color:#D97706;margin-left:4px}
+.award span{color:var(--ink2);font-size:14.5px}
