@@ -254,7 +254,9 @@ Also add: REST APIs · System Architecture · Database Design · Google Gemini �
 ## 11. Photo and banner
 
 - **Photo:** click your photo → **Edit** → **Upload**. Use the same photo as the portfolio: `portfolio/assets/img/profile.jpg` in the My-Profile repo (or your original `my_pic.png`).
-- **Banner:** click the background image (pencil) → upload a 1584 × 396 image. Ask for a banner that matches the portfolio colours if you want one.
+- **Banner:** top card → pencil / camera icon on the background image → **Upload photo** → choose `linkedin-banner.png` (1584 × 396, matches the portfolio) → **Apply**.
+  Get it from https://github.com/Vinoth-shan/My-Profile/blob/main/linkedin/linkedin-banner.png (click **Download raw file**) or on your PC at `C:\xampp\htdocs\My_Profile\linkedin\linkedin-banner.png`.
+  The text sits on the right, so your profile photo never covers it. To change the text later, edit `linkedin/banner.html` and re-render it.
 
 ---
 
