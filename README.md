@@ -10,6 +10,7 @@ Software Developer, Systems & Automation. Sole developer of 36 live systems for 
 | Project case studies | `portfolio/project.html?id=<project>` |
 | Presentation (slides) | [`portfolio/slides.html`](portfolio/slides.html) |
 | Resume (main, dark) | [`resume/5-dark.html`](resume/5-dark.html) |
+| LinkedIn update guide | [`linkedin/LINKEDIN_PROFILE.md`](linkedin/LINKEDIN_PROFILE.md) |
 | Resume (executive / bold) | [`resume/1-executive.html`](resume/1-executive.html), [`resume/4-bold.html`](resume/4-bold.html) |
 
 ## How it is built
