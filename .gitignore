@@ -9,3 +9,6 @@ Thumbs.db
 .DS_Store
 desktop.ini
 .vscode/
+
+# LinkedIn drafts (personal working notes)
+linkedin/
