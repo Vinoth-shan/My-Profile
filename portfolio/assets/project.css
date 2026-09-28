@@ -90,3 +90,5 @@
 .cs-pn.all{align-items:center;text-align:center;background:var(--navy);color:#fff;border-color:transparent}
 .cs-pn.all span{color:#A5ABD6}
 @media (max-width:760px){.cs-two{grid-template-columns:minmax(0,1fr)}.cs-next{grid-template-columns:minmax(0,1fr)}.cs-pn.r{text-align:left;align-items:flex-start}.cs-title{grid-template-columns:minmax(0,1fr)}}
+
+.cs-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}

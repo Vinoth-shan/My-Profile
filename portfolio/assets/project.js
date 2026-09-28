@@ -69,6 +69,7 @@
       ${p.metrics ? `<div class="cs-mets">${p.metrics.map(m => `<div><b>${esc(m[0])}</b><span>${esc(m[1])}</span></div>`).join("")}</div>` : ""}
       <div class="cs-facts">${facts.map(f => `<div>${ic(f[0])}<span>${esc(f[1])}</span><b>${esc(f[2])}</b></div>`).join("")}</div>
       <div class="cs-stack">${chips(p.stack)}</div>
+      ${p.links ? `<div class="cs-links">${p.links.map(([t, u, i], k) => `<a class="btn ${k ? "ghost" : "grad"}" href="${esc(u)}" target="_blank" rel="noopener">${ic(i)}${esc(t)}</a>`).join("")}</div>` : ""}
     </div>
   </section>
   <nav class="cs-toc" aria-label="On this page"><div class="wrap wide">${toc.map(([k, t]) => `<a href="#${k}">${t}</a>`).join("")}</div></nav>

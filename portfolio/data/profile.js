@@ -196,6 +196,6 @@ window.PROJECTS = [
   { id: "annual", n: "OFW Annual Day 2026", cat: "int", status: "live", one: "Event app with OTP login and fair random team draw.", features: ["Age-band balanced team draw", "Teaser video launch"], stack: ["PHP 8.2 MVC", "MariaDB"] },
 
   // Personal
-  { id: "daybook", n: "DayBook (Android)", cat: "own", status: "live", one: "My own offline-first task and expense app — built in my free time, APK shipped.", features: ["Reminders until a task is done", "Linked expense tracking", "Colour-blind-safe SVG charts", "Optional Google Drive sync"], stack: ["React 19", "TypeScript", "Capacitor 7", "Android"] },
+  { id: "daybook", n: "DayBook (Android)", cat: "own", status: "live", links: [["Download APK", "https://github.com/Vinoth-shan/DayBook/releases/download/v1.0/DayBook-v1.0.apk", "download"], ["Source on GitHub", "https://github.com/Vinoth-shan/DayBook", "github"]], one: "My own offline-first task and expense app — built in my free time, APK shipped.", features: ["Reminders until a task is done", "Linked expense tracking", "Colour-blind-safe SVG charts", "Optional Google Drive sync"], stack: ["React 19", "TypeScript", "Capacitor 7", "Android"] },
   { id: "wms", n: "WMS Monorepo", cat: "own", status: "early", one: "Warehouse management system foundation — web, mobile and API in one repo.", features: ["Turbo monorepo", "Shared types & tooling"], stack: ["TypeScript", "pnpm", "Turbo"] }
 ];
