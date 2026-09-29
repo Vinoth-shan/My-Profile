@@ -81,7 +81,7 @@ window.R = {
     ["Arrival Notice AI Pipeline", "n8n · Gemini · PHP · MariaDB", "Reads 200–300 carrier PDFs a day and routes each shipment to its operator."],
     ["Sales Force Management System", "PHP 8.2 · MariaDB · n8n", "103-table lead-to-customer platform for US and UK sales teams."],
     ["ShipFlow-UK", "PHP MVC · REST API · n8n", "Air-freight tracking with customer console and customer API."],
-    ["Verify Sender", "Outlook VBA · PHP · Gemini · RDAP", "One-click email fraud check inside Outlook."],
+    ["AI Email Suite", "PHP · Gemini / Claude · mPDF", "Turns Outlook emails into billing-review PDFs and vetting sheets."],
     ["Trucker Tracker", "PHP · FMCSA · Gemini", "Carrier verification verdict from federal data and AI."],
     ["AR Workspace", "PHP · MySQL · OTP 2FA", "Receivables platform that replaced the Excel credit-control tracker."],
     ["Customs & ISF Entry", "PHP · MariaDB · n8n", "Operator-to-broker filing workflows with audit trails."],

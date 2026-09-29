@@ -120,14 +120,14 @@ window.PROJECTS = [
     hl: "Finance-grade app with 2FA and audit trail."
   },
   {
-    id: "verify", n: "Verify Sender — Email Fraud Check", cat: "risk", flagship: true, status: "live",
-    one: "One click in Outlook tells staff whether a suspicious email is safe.",
-    problem: "Business-email-compromise attempts (fake vendors, changed bank details) reached operations staff.",
-    flow: ["Outlook macro sends email metadata", "Domain age via RDAP / WHOIS", "Trusted-vendor lookup", "Address check (Google / USPS)", "Gemini classification", "Risk score returned in Outlook"],
-    features: ["5-stage detection pipeline", "Per-address risk scoring", "Verification audit log", "Works inside existing Outlook"],
-    metrics: [["5", "checks"], ["1", "click"]],
-    stack: ["Outlook VBA", "PHP 8", "Gemini", "RDAP", "Google Maps"],
-    hl: "Security tool built into staff's daily workflow."
+    id: "aiemail", n: "AI Email Suite", cat: "fin", flagship: true, status: "live",
+    one: "Turns everyday Outlook emails into billing-review PDFs and trucker-vetting sheets with AI.",
+    problem: "Staff read long email threads by hand to prepare invoices and to record which truckers had been vetted.",
+    flow: ["Outlook emails uploaded (.msg or Excel export)", "Thread, screenshots and PDF attachments read", "Gemini or Claude extracts structured data", "Names matched to editable masters", "Billing-review PDF or vetting table produced", "Staff review, edit and download"],
+    features: ["Invoice Summary: one billing-review PDF per shipment thread", "FTL Vetting: reads vetting emails, exports the Excel sheet", "Unknown names highlighted, one click adds them to the masters", "Gemini or Claude, switched by one setting", "No database; password login; files auto-deleted"],
+    metrics: [["2", "AI modules"], ["2", "AI providers"], ["0", "databases"]],
+    stack: ["PHP 8", "Gemini API", "Claude API", "mPDF", "Outlook .msg"],
+    hl: "Two AI modules turn everyday emails into review-ready PDFs and Excel sheets."
   },
   {
     id: "trucker", n: "Trucker Tracker — Carrier Verification", cat: "risk", flagship: true, status: "live",
@@ -183,11 +183,20 @@ window.PROJECTS = [
   { id: "bt", n: "BT Invoice Pending Tracker", cat: "fin", status: "live", one: "Vendor-invoice follow-up with automatic escalation.", features: ["Operator remarks & AP review", "n8n state machine writes dates back to DB", "Escalation to leads/managers"], stack: ["PHP 8", "MariaDB", "n8n"] },
   { id: "billperf", n: "Billing Performance", cat: "fin", status: "live", one: "Billing-timeliness SLA dashboard in business days.", features: ["Custom SQL business-days function", "Operator & location slicing"], stack: ["PHP 8", "MariaDB"] },
   { id: "aht", n: "AHT Tracker (AP)", cat: "fin", status: "live", one: "Server-side task timer for the Accounts Payable team.", features: ["Timer survives tab discard & redirects", "Per-user utilisation"], stack: ["PHP 8", "MySQL"] },
-  { id: "aiemail", n: "AI Email Suite", cat: "fin", status: "live", one: "Turns Outlook emails into billing-review PDFs and trucker-vetting sheets with AI.", features: ["Invoice Summary: one billing-review PDF per shipment thread", "FTL Vetting: reads vetting emails, matches names to editable masters, exports Excel", "Reads screenshots and PDF attachments inside emails", "Gemini or Claude, switched by one setting", "No database; password login; files auto-deleted"], stack: ["PHP 8", "Gemini API", "Claude API", "mPDF", "Outlook .msg"] },
 
   // Risk & disputes
   { id: "claim", n: "Logysis Claim & Dispute", cat: "risk", status: "live", one: "9-stage invoice dispute and claims portal.", features: ["Per-action email webhooks", "Weekday morning summary via n8n", "Drag-to-reorder reports"], stack: ["PHP 8", "MariaDB", "n8n"] },
   { id: "truckissue", n: "Trucker Issue / Dispute", cat: "risk", status: "live", one: "Trucking-invoice disputes with multi-line charges.", features: ["9-state workflow", "Multiple charge lines per invoice", "Email notifications"], stack: ["PHP 8", "MariaDB", "EmailJS"] },
+  {
+    id: "verify", n: "Verify Sender — Email Fraud Check", cat: "risk", status: "live",
+    one: "One click in Outlook tells staff whether a suspicious email is safe.",
+    problem: "Business-email-compromise attempts (fake vendors, changed bank details) reached operations staff.",
+    flow: ["Outlook macro sends email metadata", "Domain age via RDAP / WHOIS", "Trusted-vendor lookup", "Address check (Google / USPS)", "Gemini classification", "Risk score returned in Outlook"],
+    features: ["5-stage detection pipeline", "Per-address risk scoring", "Verification audit log", "Works inside existing Outlook"],
+    metrics: [["5", "checks"], ["1", "click"]],
+    stack: ["Outlook VBA", "PHP 8", "Gemini", "RDAP", "Google Maps"],
+    hl: "Security tool built into staff's daily workflow."
+  },
   { id: "claims", n: "Claims & Dispute (Unified)", cat: "risk", status: "live", one: "Consolidates customer claims, third-party and trucker disputes.", features: ["Auto 'Action Required' on due follow-ups", "Role-based access", "25 MB attachments"], stack: ["PHP", "MySQL"] },
   { id: "loi", n: "LOI — Letter of Indemnity", cat: "risk", status: "live", one: "Public e-signature form for consignee indemnity letters.", features: ["Canvas signature", "PDF generated with mPDF", "Emailed and stored"], stack: ["PHP 8", "mPDF", "EmailJS"] },
 

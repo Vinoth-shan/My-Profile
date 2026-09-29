@@ -208,9 +208,9 @@ For each project: fill **Project name**, **Description**, tick **Currently worki
 3. **ShipFlow-UK**
    Description: `Air-freight tracking for the UK team with a customer console and a rate-limited customer REST API.`
    Skills: REST APIs, n8n, PHP · Link: https://vinoth-shan.github.io/My-Profile/portfolio/project.html?id=shipflow
-4. **Verify Sender**
-   Description: `One-click email fraud check inside Outlook using domain age, trusted vendors, address checks and AI scoring.`
-   Skills: Excel VBA, Google Gemini, PHP · Link: https://vinoth-shan.github.io/My-Profile/portfolio/project.html?id=verify
+4. **AI Email Suite**
+   Description: `Turns Outlook emails into billing-review PDFs and trucker-vetting Excel sheets with AI (Gemini or Claude), with names checked against editable master lists.`
+   Skills: PHP, Google Gemini, Claude API · Link: https://vinoth-shan.github.io/My-Profile/portfolio/project.html?id=aiemail
 5. **Trucker Tracker**
    Description: `Carrier verification verdict combining FMCSA federal data, address validation and AI risk assessment.`
    Skills: API Integration, Google Gemini · Link: https://vinoth-shan.github.io/My-Profile/portfolio/project.html?id=trucker
