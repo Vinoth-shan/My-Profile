@@ -1192,5 +1192,143 @@ Object.assign(window.DETAILS = window.DETAILS || {}, {
    "Digital LOI collection",
    "Signed PDF audit trail"
   ]
- }
+ },
+ "aiemail": {
+ "purpose": "Billing and operations staff spent long hours reading Outlook email threads (rates, vendor charges, screenshots, PDFs) to prepare invoices and to record which truckers had been vetted. The same manual reading was needed every time.",
+ "concept": "One password-protected app with two AI modules. Emails go in, and a ready-to-review output comes out: a billing-review PDF, or a trucker-vetting table and Excel sheet. The AI provider (Gemini or Claude) is a setting, and no database is needed.",
+ "scope": {
+  "in": [
+   "Invoice Summary from Outlook .msg threads",
+   "FTL Vetting from an Outlook Excel export or .msg files",
+   "editable masters (staff, departments, brokers)",
+   "PDF and Excel output",
+   "auto-deletion of files"
+  ],
+  "out": [
+   "sending or booking anything",
+   "invoice creation itself (output is a reviewed draft)"
+  ]
+ },
+ "roles": [
+  [
+   "Signed-in user",
+   "one shared password; uses both modules; edits results and masters"
+  ]
+ ],
+ "workflow": [
+  [
+   "Upload .msg threads",
+   "each file is checked to be a real Outlook file before a job is created",
+   "User"
+  ],
+  [
+   "Extract the thread",
+   "reads the whole thread, quoted replies, embedded screenshots and PDF attachments",
+   "System"
+  ],
+  [
+   "AI summary",
+   "a structured prompt returns shipment identity, timeline, rates quoted, vendor charges and points to check",
+   "Gemini / Claude"
+  ],
+  [
+   "Billing-review PDF",
+   "the summary is rendered as a styled PDF; several files can merge into one combined report",
+   "System"
+  ],
+  [
+   "Vetting from emails",
+   "Excel export rows are grouped into conversations, batched to the AI, one row per trucker vetting",
+   "Gemini / Claude"
+  ],
+  [
+   "Match to masters",
+   "requestors, brokers and vetters are matched; unknown names are highlighted with one-click add",
+   "System / User"
+  ],
+  [
+   "Review and download",
+   "results are editable in place, then exported as the vetting Excel sheet",
+   "User"
+  ],
+  [
+   "Auto cleanup",
+   "uploads are removed after processing; results expire after a set number of hours",
+   "System"
+  ]
+ ],
+ "modules": [
+  [
+   "Invoice Summary",
+   "msg threads to one billing-review PDF per report, with combined reports for one shipment seen from two sides"
+  ],
+  [
+   "FTL Vetting",
+   "email export to a live vetting table and Excel sheet"
+  ],
+  [
+   "Masters",
+   "editable sender list of staff, departments and broker companies"
+  ],
+  [
+   "Batch mode",
+   "command-line run for a large backlog of files"
+  ],
+  [
+   "Readiness check",
+   "page that tests PHP, limits and the AI key"
+  ]
+ ],
+ "dashboards": [
+  [
+   "FTL Vetting table",
+   "editable rows with highlighted unknown names and a panel to add them to the masters"
+  ]
+ ],
+ "records": [
+  [
+   "Job",
+   "file-based job record with status, kept only until cleanup"
+  ],
+  [
+   "Masters",
+   "senders.json seeded from a starter file and edited in the UI"
+  ]
+ ],
+ "integrations": [
+  [
+   "Google Gemini API",
+   "default model for extraction, model name set in configuration"
+  ],
+  [
+   "Anthropic Claude API",
+   "alternative provider, switched by one setting"
+  ],
+  [
+   "mPDF",
+   "PDF rendering"
+  ],
+  [
+   "Outlook .msg and Excel",
+   "input formats, read by a small built-in reader and writer"
+  ]
+ ],
+ "security": [
+  "password-protected sign-in with CSRF protection",
+  "uploads deleted as soon as the output is produced",
+  "generated files auto-deleted after a retention period",
+  "storage can sit outside the web root"
+ ],
+ "engineering": [
+  "plain PHP with no database, no Python and no headless browser",
+  "files processed one at a time so a long thread cannot time out a batch",
+  "AI told never to invent figures and to write TBD when missing",
+  "dependency-free Excel reader/writer built in-house"
+ ],
+ "outcomes": [
+  "turns long email threads into a review-ready billing PDF",
+  "turns vetting emails into a structured Excel sheet with names checked against the masters",
+  "one tool, two modules, switchable AI provider"
+ ]
+}
 });

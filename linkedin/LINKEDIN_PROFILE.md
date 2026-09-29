@@ -33,7 +33,7 @@ Click the **pencil icon** on each section and delete / replace:
 **Where:** Profile page → **pencil icon** next to your name (top card) → **Headline** box → paste → **Save**.
 
 ```
-Software Developer, Systems & Automation | Sole developer of 36 live systems for US & UK freight operations | PHP · MySQL · n8n · Gemini AI · REST APIs | AI-driven development with Claude
+Software Developer, Systems & Automation | Sole developer of 37 live systems for US & UK freight operations | PHP · MySQL · n8n · Gemini AI · REST APIs | AI-driven development with Claude
 ```
 
 ---
@@ -48,8 +48,8 @@ I design, build and run the software a freight business runs on — from databas
 I'm the only developer at A.J. Worldwide's Chennai back office, supporting US and UK freight-forwarding operations. Teams bring me a business requirement; I own everything after that: architecture, data model, UI, APIs, n8n automation, AI integration, hosting and support.
 
 In three years that has become:
-• 36 live systems used by 250 operations staff
-• 6 AI-integrated, 16 n8n-automated and 23 API-connected systems
+• 37 live systems used by 250 operations staff
+• 7 AI-integrated, 16 n8n-automated and 24 API-connected systems
 • Two customer-facing products with their own console and REST API
 • Extra Mile Award 2025–26 from A.J. Worldwide for performance
 
@@ -234,7 +234,7 @@ Also add: REST APIs · System Architecture · Database Design · Google Gemini �
 
 **Where:** top card → **Add profile section** → **Recommended** → **Add featured** → **+** → **Add a link**. Paste the URL, LinkedIn fetches a preview; edit the title/description → **Save**. Repeat for each.
 
-1. Portfolio — https://vinoth-shan.github.io/My-Profile/ — "36 live systems with case studies, workflows and outcomes."
+1. Portfolio — https://vinoth-shan.github.io/My-Profile/ — "37 live systems with case studies, workflows and outcomes."
 2. Resume — https://vinoth-shan.github.io/My-Profile/resume/5-dark.html — "Two-page resume with PDF download."
 3. Project deck — https://vinoth-shan.github.io/My-Profile/portfolio/slides.html — "Slide deck of every project."
 4. DayBook Android app — https://github.com/Vinoth-shan/DayBook/releases/tag/v1.0 — "Personal app, APK download."

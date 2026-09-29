@@ -11,13 +11,13 @@ window.R = {
     github: "github.com/Vinoth-shan",
     portfolio: "vinoth-shan.github.io/My-Profile"
   },
-  summary: "Sole software developer at A.J. Worldwide's Chennai back office, supporting US and UK freight-forwarding operations. Teams bring me a business requirement; I own everything after that: architecture, data model, UI, APIs, n8n automation, AI integration, hosting and support. In three years that has become 36 live systems used by 250 operations staff, including two customer-facing products and AI pipelines that read hundreds of shipping documents a day. Before software I founded and ran a fabrication business supplying Indian Railways, so I build with cost, users and deadlines in mind.",
+  summary: "Sole software developer at A.J. Worldwide's Chennai back office, supporting US and UK freight-forwarding operations. Teams bring me a business requirement; I own everything after that: architecture, data model, UI, APIs, n8n automation, AI integration, hosting and support. In three years that has become 37 live systems used by 250 operations staff, including two customer-facing products and AI pipelines that read hundreds of shipping documents a day. Before software I founded and ran a fabrication business supplying Indian Railways, so I build with cost, users and deadlines in mind.",
   metrics: [
-    ["36", "live applications, built solo"],
+    ["37", "live applications, built solo"],
     ["250", "operations staff using them"],
-    ["6", "AI-integrated systems"],
+    ["7", "AI-integrated systems"],
     ["16", "n8n-automated systems"],
-    ["23", "API-connected systems"],
+    ["24", "API-connected systems"],
     ["3 yrs", "as the sole developer"]
   ],
   ai: "I build with Claude as an AI pair programmer. I decide the architecture, data model and edge cases; Claude speeds up scaffolding, refactors, migrations and documentation; I review, test and can explain every line before it ships. It lets one developer deliver at the pace of a small team.",
@@ -42,6 +42,7 @@ window.R = {
         ["AI & automation", [
           "Built an AI arrival-notice pipeline (25-node n8n workflow + Gemini 2.5 Flash) that reads 200–300 carrier PDFs a day, extracts BL and container data, matches the responsible operator and emails them automatically.",
           "Cut AI cost by removing duplicate PDFs with a content hash stored in the database before any document is sent to the model.",
+          "Built AI Email Suite: turns Outlook shipment threads into billing-review PDFs and trucker-vetting emails into Excel vetting sheets, with Gemini or Claude switchable by one setting.",
           "Automated 16 systems with n8n: mailbox ingestion, webhook-driven status changes, escalation state machines and scheduled report emails.",
           "Earlier UiPath RPA bots (email routing, Outlook to Excel to database processing, scheduled scraping) removed about 3 FTE of manual work."
         ]],

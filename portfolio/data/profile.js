@@ -24,7 +24,7 @@ window.PROFILE = {
   ],
   summary: [
     "I am the only developer at A.J. Worldwide's Chennai back office. Teams bring me a basic requirement; I own everything after that — architecture, database design, UI, APIs, n8n automation, AI integration, hosting and support. Every system is version-controlled in the company's private GitHub organization.",
-    "In three years that has become 36 live systems used by 250 operations staff across US and UK freight operations, two customer-facing products, and AI pipelines that read hundreds of shipping documents a day.",
+    "In three years that has become 37 live systems used by 250 operations staff across US and UK freight operations, two customer-facing products, and AI pipelines that read hundreds of shipping documents a day.",
     "I build with AI (Claude) as a force multiplier: I make the architecture decisions, AI helps me ship them faster."
   ],
   awards: [
@@ -47,7 +47,7 @@ window.PROFILE = {
       { ic: "sparkles", t: "Claude accelerates", d: "Scaffolding, refactors, SQL migrations, test data and documentation, produced in minutes instead of days." },
       { ic: "scan-search", t: "Every line reviewed", d: "Generated code is read, run and corrected by me. It ships only when I can explain it." },
       { ic: "refresh-cw", t: "Agile, iterative delivery", d: "Every system starts as a working first version and keeps gaining features in short cycles driven by user feedback." },
-      { ic: "gauge", t: "Solo at team speed", d: "36 live systems in three years, maintained by one developer." }
+      { ic: "gauge", t: "Solo at team speed", d: "37 live systems in three years, maintained by one developer." }
     ]
   },
   process: [
@@ -183,6 +183,7 @@ window.PROJECTS = [
   { id: "bt", n: "BT Invoice Pending Tracker", cat: "fin", status: "live", one: "Vendor-invoice follow-up with automatic escalation.", features: ["Operator remarks & AP review", "n8n state machine writes dates back to DB", "Escalation to leads/managers"], stack: ["PHP 8", "MariaDB", "n8n"] },
   { id: "billperf", n: "Billing Performance", cat: "fin", status: "live", one: "Billing-timeliness SLA dashboard in business days.", features: ["Custom SQL business-days function", "Operator & location slicing"], stack: ["PHP 8", "MariaDB"] },
   { id: "aht", n: "AHT Tracker (AP)", cat: "fin", status: "live", one: "Server-side task timer for the Accounts Payable team.", features: ["Timer survives tab discard & redirects", "Per-user utilisation"], stack: ["PHP 8", "MySQL"] },
+  { id: "aiemail", n: "AI Email Suite", cat: "fin", status: "live", one: "Turns Outlook emails into billing-review PDFs and trucker-vetting sheets with AI.", features: ["Invoice Summary: one billing-review PDF per shipment thread", "FTL Vetting: reads vetting emails, matches names to editable masters, exports Excel", "Reads screenshots and PDF attachments inside emails", "Gemini or Claude, switched by one setting", "No database; password login; files auto-deleted"], stack: ["PHP 8", "Gemini API", "Claude API", "mPDF", "Outlook .msg"] },
 
   // Risk & disputes
   { id: "claim", n: "Logysis Claim & Dispute", cat: "risk", status: "live", one: "9-stage invoice dispute and claims portal.", features: ["Per-action email webhooks", "Weekday morning summary via n8n", "Drag-to-reorder reports"], stack: ["PHP 8", "MariaDB", "n8n"] },

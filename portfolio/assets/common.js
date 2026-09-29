@@ -4,7 +4,7 @@ window.UI = (() => {
   const PICON = { arn: "file-scan", sfms: "target", oex: "container", ar: "landmark", verify: "mail-check", trucker: "truck", shipflow: "plane-landing", pdesk: "kanban-square",
     oiw: "ship", customs: "stamp", isf: "file-badge", ctrack: "boxes", empty: "timer-reset", wip: "list-checks", rdd: "git-compare-arrows", errlog: "bug", shiptrack: "search-check", lcl: "calculator",
     aefm: "plane-takeoff", aimp: "plane-landing", aew: "layout-template", aiw: "layout-template", unbilled: "receipt", bt: "bell-ring", billperf: "gauge", aht: "timer",
-    claim: "scale", truckissue: "truck", claims: "files", loi: "signature", ccc: "warehouse", pms: "award", room: "calendar-clock", annual: "party-popper", odyssey: "bed-double", org: "network", daybook: "smartphone", wms: "package" };
+    claim: "scale", truckissue: "truck", claims: "files", loi: "signature", ccc: "warehouse", pms: "award", room: "calendar-clock", annual: "party-popper", odyssey: "bed-double", org: "network", daybook: "smartphone", wms: "package", aiemail: "mails" };
   const ST = { live: ["s-live", "Live"], dev: ["s-dev", "In development"], early: ["s-early", "Early stage"] };
   const status = s => `<span class="status ${ST[s][0]}">${ST[s][1]}</span>`;
   const chips = a => `<div class="chips">${(a || []).map(x => `<span class="chip">${esc(x)}</span>`).join("")}</div>`;
