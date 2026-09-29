@@ -55,7 +55,7 @@ window.R = {
           "Built fraud-prevention tools: one-click Outlook sender verification (domain age, trusted vendors, address checks, AI scoring) and carrier verification using FMCSA federal data."
         ]],
         ["Finance & compliance workflows", [
-          "Moved Excel-based work into audited web workflows: US customs entry (8 stages), ISF 10+2 filing, accounts receivable with 7 roles and OTP login, unbilled-revenue tracking, vendor-invoice escalation and dispute management.",
+          "Moved Excel-based work into audited web workflows: US customs entry (8 stages), ISF entry filing, accounts receivable with 7 roles and OTP login, unbilled-revenue tracking, vendor-invoice escalation and dispute management.",
           "Replaced the company's ClickUp subscription with ProjectDesk, an in-house Kanban tracker with custom workflows and AI-drafted task descriptions."
         ]]
       ]

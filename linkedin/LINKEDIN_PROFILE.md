@@ -112,7 +112,7 @@ Customer products & security
 • Built fraud checks for emails (Outlook one-click verification) and trucking carriers (FMCSA data + AI).
 
 Finance & compliance
-• Moved Excel-based work into audited web workflows: US customs entry, ISF 10+2, accounts receivable with OTP login, unbilled-revenue tracking and dispute management.
+• Moved Excel-based work into audited web workflows: US customs entry, ISF entry, accounts receivable with OTP login, unbilled-revenue tracking and dispute management.
 • Replaced ClickUp with ProjectDesk, an in-house Kanban tracker.
 ```
 

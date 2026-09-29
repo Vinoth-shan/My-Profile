@@ -10,3 +10,6 @@ Thumbs.db
 desktop.ini
 .vscode/
 
+
+# Management deck (built for the logistics GM, not part of the portfolio)
+management/

@@ -304,12 +304,12 @@ Object.assign(window.DETAILS = window.DETAILS || {}, {
   ]
  },
  "isf": {
-  "purpose": "Operators must file US Customs ISF (10+2) for ocean imports at least 24h before vessel load. Brokers transmit to CBP and track filing status. Replaces email-based coordination.",
+  "purpose": "Operators must file US Customs ISF for ocean imports at least 24h before vessel load. Brokers transmit to CBP and track filing status. Replaces email-based coordination.",
   "concept": "6-stage workflow (New → In Progress → Ready to Transmit → ISF Accepted → BILL Matched/Not Matched). Operators submit draft ISF with docs; brokers edit, transmit to CBP via webhook, status updates trigger n8n emails.",
   "scope": {
    "in": [
     "ISF filings",
-    "operator docs (ISF 10+2 + supporting)",
+    "operator docs (ISF + supporting)",
     "broker updates",
     "CBP acceptance"
    ],
